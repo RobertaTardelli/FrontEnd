@@ -3,6 +3,9 @@ alert("Bem vindo ao jogo da adivinhação");
 var numeroSecretoDaDuda = 4;
 var chute;
 
+while(chute != numeroSecretoDaDuda){
+
+}
 chute = prompt("Chute um número de 1 a 10");
 
 // Compara o chute com o numero

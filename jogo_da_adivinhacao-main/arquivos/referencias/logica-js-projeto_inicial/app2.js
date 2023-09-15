@@ -52,7 +52,7 @@ function exercicio4() {
    if (idade < 16) {
       alert("Entrada Proibida");
    }
-   else if (idade == 16 || idade == 17 || idade == 18) {
+   else if (idade >=16 && idade < 18) {
       alert("Entrada Liberada com Acompanhante");
    }
    else {
@@ -66,45 +66,49 @@ function exercicio5() {
    let senha = ("1234");
    let loginDigitado = prompt("Digite seu nome!");
    let senhaDigitada = prompt("Digite sua senha!");
-   let acerto = 0;
-   let erro = 0;
-
+   
    if ((loginDigitado == login) && (senhaDigitada == senha)) {
       alert("Bem Vindo!");
- }
- else if ((loginDigitado != login) && (senhaDigitada != senha)){
-   alert("Login e Senha Incorretos");
- }
-    else if (loginDigitado != login){
+   }
+   else if ((loginDigitado != login) && (senhaDigitada != senha)){
+      alert("Login e Senha Incorretos");
+   }
+   else if (loginDigitado != login){
       alert("Login incorreto!");
- }
-    else {
+   }
+   else {
       alert("Senha Incorreta!");
-
-    }
+      
    }
+}
 
-   function exercicio6(){
-
-      let primeiraPergunta = prompt("Qual a cor do cavalo Branco de Napoleão? \n1. cavalo \n2. branco \n3. Napoleão");
-      let segundaPergunta = prompt("O Rato do Rei de Roma roeu o que? \n1. roupa \n2. preto \n3. pé");
-      let terceiraPergunta = promt("QUEM DESCOBRIU O BRASIL? \n1. Indios \n2. Cabral \n3. Colombo" );
-
+function exercicio6(){
+   
+   let primeiraPergunta = parseInt(prompt("Qual a cor do cavalo Branco de Napoleão? \n1. cavalo \n2. branco \n3. Napoleão"));
+   let segundaPergunta = parseInt(prompt("O Rato do Rei de Roma roeu o que? \n1. roupa \n2. preto \n3. pé"));
+   let terceiraPergunta = parseInt(prompt("QUEM DESCOBRIU O BRASIL? \n1. Indios \n2. Cabral \n3. Colombo" ));
+   var acerto = 0;
+   var erro = 0;
       if(primeiraPergunta == "2"){
-         acerto++;
+         parseInt(acerto++);
        }else {
-            erro++;
-
-       }if (segundaPergunta == "1") {
-         acerto++;
+            parseInt(erro++);
+         }
+         
+      if (segundaPergunta == "1") {
+         parseInt(acerto++);
       }else{
-         erro++;
-      }if (terceiraPergunta == "2"){
-         acerto++;
+         parseInt(erro++);
+      }
+      
+      if (terceiraPergunta == "2"){
+         parseInt(acerto++);
       }else{
-         erro++;
-      alert(acerto);
-   }
+         parseInt(erro++);
+      
+      }
+      alert(`Você acertou! ${acerto}`);
+      alert(`Você errou! ${erro}`);
 
    
 
