@@ -1,4 +1,4 @@
-function exercicio1() {
+function lista2exercicio1() {
 
    let numero = prompt("Digite um numero:");
 

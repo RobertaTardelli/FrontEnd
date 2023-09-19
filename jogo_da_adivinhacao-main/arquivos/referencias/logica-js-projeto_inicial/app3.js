@@ -1,4 +1,4 @@
-function exercicio1() {
+function lista3exercicio1() {
 
 
     do
@@ -62,7 +62,7 @@ function exercicio3() {
 
 function exercicio5() {
 
-    let login = ("Roberta@gmail.com");
+    let login = ("Roberta");
     let senha = ("1234");
 
 
@@ -99,4 +99,7 @@ function exercicio5() {
 
 
 
-    exercicio5()
+    exercicio6primo()
+ 
+
+    
